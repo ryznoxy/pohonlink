@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ryznoxy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,7 +19,7 @@
     <div class="container max-w-[660px]">
       <div class="flex justify-center items-center flex-col pt-[32px]">
         <img
-          src="/images.png"
+          src="images1.png"
           alt="logo"
           class="bg-[#270946] rounded-full w-32 max-w-md ring-4 ring-blue-50"
         />
@@ -82,6 +82,45 @@
         >
           <p>Tiktok</p>
         </a>
+
+    <!-- Button trigger modal -->
+<button type="button" class="ring-[5px] justify-center flex items-center ring-purple-950 rounded-full h-[60px] hover:bg-purple-950/70 hover:ring-white font-bold transition ease-in-out delay-50 hover:-translate-y-2 hover:scale-101
+
+duration-150
+" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Spotify
+</button>
+
+        <!-- Modal -->
+<div class="modal fade justify-center hidden outline-none overflow-x-hidden overflow-y-auto "
+id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog relative w-auto pointer-events-none">
+  <div
+    class="modal-content border-none shadow-sm relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-[30px]  outline-none ">
+    <div
+      class=" flex flex-shrink-0 items-center justify-between px-4 py-[16px] ">
+      <h5 class="text pl-[45%] font-small leading-normal text-black" id="exampleModalLabel">Spotify</h5>
+      <button type="button"
+        class="btn-close p-2 items-center justify-center font-bold text-lg"
+        data-bs-dismiss="modal" aria-label="Close"><svg width="20" height="20"viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class=" " role="img" aria-hidden="false" aria-labelledby="ltclid1_title "><title id="ltclid1_title">Close</title><path d="M13.6283 3.1151L14 2.74339L13.2566 2L12.8849 2.3717L13.6283 3.1151ZM2.3717 12.885L2 13.2566L2.7434 14L3.11509 13.6284L2.3717 12.885ZM3.11509 2.3717L2.7434 2L2 2.74339L2.3717 3.1151L3.11509 2.3717ZM12.8849 13.6284L13.2566 14L14 13.2566L13.6283 12.885L12.8849 13.6284ZM12.8849 2.3717L2.3717 12.885L3.11509 13.6284L13.6283 3.1151L12.8849 2.3717ZM2.3717 3.1151L12.8849 13.6284L13.6283 12.885L3.11509 2.3717L2.3717 3.1151Z" fill="currentColor"></path></svg></button>
+    </div>
+    <div class="modal-body text-black relative pt-[24px] pb-[40px]  px-[40px]">
+      <iframe title="Music embed" class="w-full rounded-[20px]" scrolling="no" src="https://open.spotify.com/embed/playlist/0eCULBD4xM5yHF2O7uG2ot" data-testid="spotify-preview--iframe" height="380"></iframe>
+    </div>
+    <div
+      class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center text-center p-4 ">
+      <a type="button" class="relative transition duration-75 ease-out w-full h-2xl px-md rounded-full font-bold  outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black antialiased bg-primary text-white bg-black hover:bg-gray-800 active:bg-black flex justify-center items-center 
+        py-[12px] 
+        
+        shadow-md
+        hover:bg-black/80  hover:shadow-lg
+        " href="https://open.spotify.com/playlist/0eCULBD4xM5yHF2O7uG2ot?si=DlGh8sTNQ3-cIkOAlSbfNQ&amp" rel="noopener noreferrer" target="_blank"><span class="flex items-center justify-center"><span class="block text-md font-semibold ">Open in Spotify</span></span> </a>
+
+    </div>
+  </div>
+</div>
+</div>
+
       </div>
     </div>
 
@@ -94,6 +133,7 @@
       </span>
     </footer>
 
+<script src="src/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
