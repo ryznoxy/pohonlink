@@ -14,17 +14,21 @@
     />
   </head>
   <body
-    class="bg-gradient-to-b from-[#111222] to-[#29003b] text-white h-screen"
+    class="bg-gradient-to-b from-[#111222] to-[#29003b] text-white overflow-y-"
   >
+    <!--Preloader-->
+
+    <!--Preloader-->
+
     <div class="container max-w-[660px]">
       <div class="flex justify-center items-center flex-col pt-[32px]">
         <img
-          src="images.png"
+          src="img/images.png"
           alt="logo"
           class="bg-[#270946] rounded-full w-32 max-w-md ring-4 ring-blue-50"
         />
         <h1 class="pt-[16px] font-bold">RYZNOXY</h1>
-        <h2 class="text-[16px] pl-40px pr-40px pt-[16px] text-center ">
+        <h2 class="text-[16px] pl-40px pr-40px pt-[16px] text-center">
           Halloo!! Bantu Support Aku Disini , Terimakasih
         </h2>
       </div>
@@ -83,57 +87,151 @@
           <p>Tiktok</p>
         </a>
 
-    <!-- Button trigger modal -->
-<button type="button" class="ring-[5px] justify-center flex items-center ring-purple-950 rounded-full h-[60px] hover:bg-purple-950/70 hover:ring-white font-bold transition ease-in-out delay-50 hover:-translate-y-2 hover:scale-101
-
-duration-150
-" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Spotify
-</button>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="ring-[5px] justify-center flex items-center ring-purple-950 rounded-full h-[60px] hover:bg-purple-950/70 hover:ring-white font-bold transition ease-in-out delay-50 hover:-translate-y-2 hover:scale-101 duration-150"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Spotify
+        </button>
 
         <!-- Modal -->
-<div class="modal fade justify-center hidden outline-none overflow-x-hidden overflow-y-auto "
-id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog relative w-auto pointer-events-none">
-  <div
-    class="modal-content border-none shadow-sm relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-[30px]  outline-none ">
-    <div
-      class=" flex flex-shrink-0 items-center justify-between px-4 py-[16px] ">
-      <h5 class="text pl-[45%] font-small leading-normal text-black" id="exampleModalLabel">Spotify</h5>
-      <button type="button"
-        class="btn-close p-2 items-center justify-center font-bold text-lg"
-        data-bs-dismiss="modal" aria-label="Close"><svg width="20" height="20"viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class=" " role="img" aria-hidden="false" aria-labelledby="ltclid1_title "><title id="ltclid1_title">Close</title><path d="M13.6283 3.1151L14 2.74339L13.2566 2L12.8849 2.3717L13.6283 3.1151ZM2.3717 12.885L2 13.2566L2.7434 14L3.11509 13.6284L2.3717 12.885ZM3.11509 2.3717L2.7434 2L2 2.74339L2.3717 3.1151L3.11509 2.3717ZM12.8849 13.6284L13.2566 14L14 13.2566L13.6283 12.885L12.8849 13.6284ZM12.8849 2.3717L2.3717 12.885L3.11509 13.6284L13.6283 3.1151L12.8849 2.3717ZM2.3717 3.1151L12.8849 13.6284L13.6283 12.885L3.11509 2.3717L2.3717 3.1151Z" fill="currentColor"></path></svg></button>
-    </div>
-    <div class="modal-body text-black relative pt-[24px] pb-[40px]  px-[40px]">
-      <iframe title="Music embed" class="w-full rounded-[20px]" scrolling="no" src="https://open.spotify.com/embed/playlist/0eCULBD4xM5yHF2O7uG2ot" data-testid="spotify-preview--iframe" height="380"></iframe>
-    </div>
-    <div
-      class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center text-center p-4 ">
-      <a type="button" class="relative transition duration-75 ease-out w-full h-2xl px-md rounded-full font-bold  outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black antialiased bg-primary text-white bg-black hover:bg-gray-800 active:bg-black flex justify-center items-center 
-        py-[12px] 
-        
-        shadow-md
-        hover:bg-black/80  hover:shadow-lg
-        " href="https://open.spotify.com/playlist/0eCULBD4xM5yHF2O7uG2ot?si=DlGh8sTNQ3-cIkOAlSbfNQ&amp" rel="noopener noreferrer" target="_blank"><span class="flex items-center justify-center"><span class="block text-md font-semibold ">Open in Spotify</span></span> </a>
-
-    </div>
-  </div>
-</div>
-</div>
-
+        <div
+          class="modal fade justify-center hidden outline-none overflow-x-hidden overflow-y-auto"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog relative w-auto pointer-events-none">
+            <div
+              class="modal-content border-none shadow-sm relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-[30px] outline-none"
+            >
+              <div
+                class="flex flex-shrink-0 items-center justify-between px-4 py-[16px]"
+              >
+                <h5
+                  class="text pl-[45%] font-small leading-normal text-black"
+                  id="exampleModalLabel"
+                >
+                  Spotify
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close p-2 items-center justify-center font-bold text-lg"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class=" "
+                    role="img"
+                    aria-hidden="false"
+                    aria-labelledby="ltclid1_title "
+                  >
+                    <title id="ltclid1_title">Close</title>
+                    <path
+                      d="M13.6283 3.1151L14 2.74339L13.2566 2L12.8849 2.3717L13.6283 3.1151ZM2.3717 12.885L2 13.2566L2.7434 14L3.11509 13.6284L2.3717 12.885ZM3.11509 2.3717L2.7434 2L2 2.74339L2.3717 3.1151L3.11509 2.3717ZM12.8849 13.6284L13.2566 14L14 13.2566L13.6283 12.885L12.8849 13.6284ZM12.8849 2.3717L2.3717 12.885L3.11509 13.6284L13.6283 3.1151L12.8849 2.3717ZM2.3717 3.1151L12.8849 13.6284L13.6283 12.885L3.11509 2.3717L2.3717 3.1151Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="modal-body text-black relative pt-[24px] pb-[40px] px-[40px]"
+              >
+                <iframe
+                  title="Music embed"
+                  class="w-full rounded-[20px]"
+                  scrolling="no"
+                  src="https://open.spotify.com/embed/playlist/0eCULBD4xM5yHF2O7uG2ot"
+                  data-testid="spotify-preview--iframe"
+                  height="380"
+                ></iframe>
+              </div>
+              <div
+                class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center text-center p-4"
+              >
+                <a
+                  type="button"
+                  class="relative transition duration-75 ease-out w-full h-2xl px-md rounded-full font-bold outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black antialiased bg-primary text-white bg-black hover:bg-gray-800 active:bg-black flex justify-center items-center py-[12px] shadow-md hover:bg-black/80 hover:shadow-lg"
+                  href="https://open.spotify.com/playlist/0eCULBD4xM5yHF2O7uG2ot?si=DlGh8sTNQ3-cIkOAlSbfNQ&amp"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="flex items-center justify-center"
+                    ><span class="block text-md font-semibold"
+                      >Open in Spotify</span
+                    ></span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="fixed -bottom-0 -z-10 2xl:w-[100%] md:w-[100%] max-[641px]:w-[100%] sm:w-[100%] ">
-      <span class=""><svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 432L21.5 428C43 424 86 416 128.8 410.3C171.7 404.7 214.3 401.3 257.2 404.5C300 407.7 343 417.3 385.8 419.5C428.7 421.7 471.3 416.3 514.2 418.7C557 421 600 431 642.8 434.3C685.7 437.7 728.3 434.3 771.2 433.8C814 433.3 857 435.7 878.5 436.8L900 438L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#29003b"></path><path d="M0 441L21.5 444.3C43 447.7 86 454.3 128.8 452.5C171.7 450.7 214.3 440.3 257.2 442.7C300 445 343 460 385.8 463.2C428.7 466.3 471.3 457.7 514.2 452.8C557 448 600 447 642.8 448.7C685.7 450.3 728.3 454.7 771.2 458.3C814 462 857 465 878.5 466.5L900 468L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#1f0938"></path><path d="M0 483L21.5 486.8C43 490.7 86 498.3 128.8 495.8C171.7 493.3 214.3 480.7 257.2 479.3C300 478 343 488 385.8 493.5C428.7 499 471.3 500 514.2 497.3C557 494.7 600 488.3 642.8 489C685.7 489.7 728.3 497.3 771.2 494.7C814 492 857 479 878.5 472.5L900 466L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#170e32"></path><path d="M0 543L21.5 538.3C43 533.7 86 524.3 128.8 520.3C171.7 516.3 214.3 517.7 257.2 522.3C300 527 343 535 385.8 535.8C428.7 536.7 471.3 530.3 514.2 527.5C557 524.7 600 525.3 642.8 527.2C685.7 529 728.3 532 771.2 533.3C814 534.7 857 534.3 878.5 534.2L900 534L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#12112b"></path><path d="M0 540L21.5 541.3C43 542.7 86 545.3 128.8 548.2C171.7 551 214.3 554 257.2 556.5C300 559 343 561 385.8 558.8C428.7 556.7 471.3 550.3 514.2 552.5C557 554.7 600 565.3 642.8 567.5C685.7 569.7 728.3 563.3 771.2 563.3C814 563.3 857 569.7 878.5 572.8L900 576L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#111222"></path></svg></span>
+    <div
+      class="fixed bottom-0 -z-10 2xl:w-[100%] md:w-[100%] max-[641px]:w-[100%] sm:w-[100%]"
+    >
+      <span class=""
+        ><svg
+          id="visual"
+          viewBox="0 0 900 600"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <path
+            d="M0 432L21.5 428C43 424 86 416 128.8 410.3C171.7 404.7 214.3 401.3 257.2 404.5C300 407.7 343 417.3 385.8 419.5C428.7 421.7 471.3 416.3 514.2 418.7C557 421 600 431 642.8 434.3C685.7 437.7 728.3 434.3 771.2 433.8C814 433.3 857 435.7 878.5 436.8L900 438L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+            fill="#29003b"
+          ></path>
+          <path
+            d="M0 441L21.5 444.3C43 447.7 86 454.3 128.8 452.5C171.7 450.7 214.3 440.3 257.2 442.7C300 445 343 460 385.8 463.2C428.7 466.3 471.3 457.7 514.2 452.8C557 448 600 447 642.8 448.7C685.7 450.3 728.3 454.7 771.2 458.3C814 462 857 465 878.5 466.5L900 468L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+            fill="#1f0938"
+          ></path>
+          <path
+            d="M0 483L21.5 486.8C43 490.7 86 498.3 128.8 495.8C171.7 493.3 214.3 480.7 257.2 479.3C300 478 343 488 385.8 493.5C428.7 499 471.3 500 514.2 497.3C557 494.7 600 488.3 642.8 489C685.7 489.7 728.3 497.3 771.2 494.7C814 492 857 479 878.5 472.5L900 466L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+            fill="#170e32"
+          ></path>
+          <path
+            d="M0 543L21.5 538.3C43 533.7 86 524.3 128.8 520.3C171.7 516.3 214.3 517.7 257.2 522.3C300 527 343 535 385.8 535.8C428.7 536.7 471.3 530.3 514.2 527.5C557 524.7 600 525.3 642.8 527.2C685.7 529 728.3 532 771.2 533.3C814 534.7 857 534.3 878.5 534.2L900 534L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+            fill="#12112b"
+          ></path>
+          <path
+            d="M0 540L21.5 541.3C43 542.7 86 545.3 128.8 548.2C171.7 551 214.3 554 257.2 556.5C300 559 343 561 385.8 558.8C428.7 556.7 471.3 550.3 514.2 552.5C557 554.7 600 565.3 642.8 567.5C685.7 569.7 728.3 563.3 771.2 563.3C814 563.3 857 569.7 878.5 572.8L900 576L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+            fill="#111222"
+          ></path></svg
+      ></span>
     </div>
 
-    <footer class="">
-      <div class="left-0 bottom-0 text-center w-[100%] position-fixed z-10">CR : ryznoxy 2023</div>
-      </span>
+    <footer class="mt-[40px]">
+      <div class="justify-center items-center flex p-4">
+        <div class="flex gap-2">
+          <p class="text-center">Made with ☕ by</p>
+          <img
+            src="img/footer.svg"
+            alt="footer"
+            srcset=""
+            class="self-center"
+            width="100px"
+          />
+        </div>
+      </div>
     </footer>
 
-<script src="src/main.js"></script>
+    <div class="gap-2 flex justify-center items-center">
+      <br />
+      <span>Inspirated by</span><a href="http://linktr.ee">Linktree</a>
+    </div>
+
+    <script src="src/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
